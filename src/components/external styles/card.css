@@ -1,0 +1,23 @@
+.card-btns{
+    display: flex;
+}
+.card-btns .card-btn{
+    margin:10px 3px 10px ;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border: .6px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+    transition: .1s;
+    color: black;
+}
+
+
+.card-btns .card-btn:hover{
+    background-color: green;
+}
+.link-btn{
+    text-decoration: none;
+    color: black;
+}

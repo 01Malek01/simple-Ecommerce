@@ -1,0 +1,13 @@
+.btn-component{
+    margin:10px auto 10px auto;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border: .6px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+    transition: .1s;
+  }
+  .btn-component:hover{
+    background-color: green;
+  }

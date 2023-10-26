@@ -1,0 +1,98 @@
+.side-menu{
+    height:100%;
+    width: 17rem;
+    background-color: #3085d6;
+    z-index: 999;
+    position: fixed;
+    top: 80px;
+    left: -17rem;
+    transition: .4s;
+    border-radius: 0px 50px;
+    color: white;
+    
+}
+
+.setting-icon{
+    position: absolute;
+    top: 2rem;
+    right: -2rem;
+    transform: translate(-66%,38%);
+    height: 200px;
+    cursor: pointer;
+}
+.custom-loader {
+    width: 25px;
+    height: 25px;
+    display: grid;
+    color:#269313;
+    background: radial-gradient(farthest-side, currentColor calc(100% - 3px),#0000 calc(100% - 2.5px) 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 6.5px),#000 calc(100% - 6px));
+    border-radius: 50%;
+    animation: s9 4s infinite linear;
+    position: absolute;
+    left: 17rem;
+    cursor: pointer;
+
+  }
+  .custom-loader::before,
+  .custom-loader::after {    
+    content:"";
+    grid-area: 1/1;
+    background:
+      linear-gradient(currentColor 0 0) center,
+      linear-gradient(currentColor 0 0) center;
+    background-size: 100% 5px,5px 100%;
+    background-repeat: no-repeat;
+  }
+  .custom-loader::after {
+     transform: rotate(45deg);
+  }
+  
+  @keyframes s9 { 
+    100%{transform: rotate(1turn)}
+  }
+
+  .menu-open{
+    left: 0;
+  }
+
+  .side-menu h2{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  .side-menu li{
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+  }
+
+  .side-menu li::before{
+  transition: .1s;
+
+  }
+
+  .side-menu li:hover::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    color: white;
+    left: 0;
+    bottom: -5px;
+    background-color: white;
+    animation-name: underLine;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    
+  }
+
+@keyframes underLine{
+  0%{
+    width: 0;
+  }
+  
+  100%{
+    width: 100%;
+  }
+} 

@@ -1,0 +1,36 @@
+.searchbar{
+    /* width: 600px;
+    height: 40px; */
+    width: 100%;
+    display: flex;
+    
+}
+.srch-btn{
+    height: 40px
+}
+.acc-box{
+    border: 1px solid black;
+    display: flex;
+    padding: 5px;
+    height: 39px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-settings-box {
+    position: absolute;
+    right: 0px;
+    transform: translateX(-40%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-settings-box ul li {
+    line-height: 1.6;
+    margin: 10px;
+    cursor: pointer;
+}
+.logo{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    width: 100px;
+}
