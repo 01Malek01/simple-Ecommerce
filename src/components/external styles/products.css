@@ -1,23 +1,27 @@
-.filter-btns{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.filter-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-.filter-btns button{
-    margin:10px auto 10px auto;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    border: .6px solid black;
-    border-radius: 5px;
-    padding: .5rem;
-    transition: .1s;
+.filter-btns button {
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border: 0.6px solid black;
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: 0.1s;
 }
-.filter-btns button:hover{
-    background-color: #656565;
+.filter-btns button:hover {
+  background-color: #656565;
 }
-.link-btn{
-    text-decoration: none;
-    color: black;
+.link-btn {
+  text-decoration: none;
+  color: black;
+}
+.product-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
 }

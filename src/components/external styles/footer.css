@@ -1,0 +1,35 @@
+/* Footer.css */
+
+/* Style the entire footer */
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: justify;
+}
+
+/* Style the list items in the footer */
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 3px;
+}
+
+/* Add any other custom styles you need */
+/* For example, adjust font sizes, colors, etc. */
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  color: green;
+  transition: 0.3s;
+  text-decoration: none;
+  text-decoration-color: green;
+  text-decoration-thickness: 3px;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  text-underline-position: under;
+}

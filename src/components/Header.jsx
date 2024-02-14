@@ -1,4 +1,4 @@
-import MegaMenus from "./MegaMenus";
+import React from 'react';
 import NavbarEl from "./NavbarEl";
 
 export default function Header(props) {
@@ -6,7 +6,6 @@ export default function Header(props) {
         <>
         <div className="container-fluid">
         <NavbarEl />
-        <MegaMenus />
         </div>
         </>
         

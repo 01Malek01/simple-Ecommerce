@@ -1,0 +1,11 @@
+.carousel-img {
+  object-fit: contain;
+  aspect-ratio: 3/2;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.carousel-item {
+  background-color: #527d96;
+}

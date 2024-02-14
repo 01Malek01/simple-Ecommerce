@@ -1,0 +1,48 @@
+.side-filter {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+}
+
+.side-filter h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.side-filter ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-filter li {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.side-filter li:hover {
+  background-color: #ddd;
+}
+
+.side-filter .active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.active {
+  text-decoration-color: green;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  text-underline-position: under;
+}
+
+@media (max-width: 1000px) {
+  .side-filter {
+    height: fit-content;
+  }
+}

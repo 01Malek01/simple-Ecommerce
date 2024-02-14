@@ -1,0 +1,55 @@
+.product-slider {
+  /* Overall styles for the slider container */
+}
+
+.product-card {
+  /* Styles for individual product cards */
+  cursor: pointer;
+}
+
+.slider-dots {
+  /* Styles for navigation dots */
+}
+.slider-product-link {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.slider-product-link:hover {
+  transform: scale(1.1);
+}
+
+/* Customize styles as needed using CSS selectors */
+
+/* Custom arrow styles */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: #ffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+
+  /* Add box shadow or other styling as needed */
+}
+
+.custom-arrow.next {
+  right: -2rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.custom-arrow.prev {
+  left: -2rem;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Hover effect */
+.custom-arrow:hover {
+  background-color: #4e4c4c;
+}

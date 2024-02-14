@@ -1,9 +1,11 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
+
 import './external styles/card.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../Rtk/slices/cart-slice';
 import Button from './Button';
-import { fetchTargetProduct } from '../Rtk/slices/products-slice';
+// import { fetchTargetProduct } from '../Rtk/slices/products-slice';
 export default function Card({title , image , description , price , prod}) {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
@@ -16,7 +18,7 @@ export default function Card({title , image , description , price , prod}) {
     <>
       <div className="container">
       <div
-        className="card m-2 p-3"
+        className=" m-2 p-3"
         style={{
           width: "18rem",
           height:"25rem"

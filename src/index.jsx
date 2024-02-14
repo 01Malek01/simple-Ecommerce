@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App.jsx';
+import reportWebVitals from './reportWebVitals.js';
 import { BrowserRouter } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import { Provider } from 'react-redux';
-import store from './Rtk/store/store';
-
+import store from './Rtk/store/store.js';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 
