@@ -9,13 +9,13 @@ function Slider() {
       <div id="carouselExampleAutoplaying" className="carousel slide m-3" data-bs-ride="carousel">
         <div className="carousel-inner rounded">
           <div className="carousel-item active">
-            <img src='/src/assets/prom.jpg' className="d-block  carousel-img " height='400px' alt="..." />
+            <img src='../assets/prom.jpg' className="d-block  carousel-img " height='400px' alt="..." />
           </div>
           <div className="carousel-item">
-            <img src='/src/assets/prom(2).jpg' className="d-block  carousel-img " height='400px' alt="..." />
+            <img src='../assets/prom(2).jpg' className="d-block  carousel-img " height='400px' alt="..." />
           </div>
           <div className="carousel-item">
-            <img src='/src/assets/prom (3).jpg' className="d-block  carousel-img " height='400px' alt="..." />
+            <img src='../assets/prom (3).jpg' className="d-block  carousel-img " height='400px' alt="..." />
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

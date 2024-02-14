@@ -47,7 +47,7 @@ export default function NavbarEl() {
           <Link to={"/"} className="nav-link">
             <img
               className="logo-img"
-              src="/src/assets/1x/Asset 1.png"
+              src="../assets/1x/Asset 1.png"
               alt="logo"
             />
           </Link>

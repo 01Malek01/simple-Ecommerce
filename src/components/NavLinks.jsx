@@ -35,7 +35,7 @@ export default function NavLinks() {
           <Link className="link-btn nav-link col-4" to={"/cart"}>
             <img
               className=""
-              src='/src/assets/shopping-cart_2838838.png'
+              src='../assets/shopping-cart_2838838.png'
               width={"30px"}
               height={"30px"}
               alt="img"
