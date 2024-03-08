@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 import NavLinks from './NavLinks';
 import { useDispatch, useSelector } from "react-redux";
 import { updateQuery, updateSearchResults } from "../Rtk/slices/searchQuerySlice";
-import {useParams} from "react-router-dom"
+import { useParams } from "react-router-dom"
 
 export default function NavbarEl() {
   const [pathname, setPathname] = useState("");
@@ -54,8 +54,11 @@ export default function NavbarEl() {
             />
           </Link>
         </div>
-        <div className="" >
-          <div className={`searchbar-container ${pathname === '/products' && id === undefined ? 'd-block' : 'd-none'}`}>
+        <div className=" d-flex justify-content-between align-items-center " >
+          <div className='nav-links'>
+            <NavLinks />
+          </div>
+          <div className={`searchbar-container ${pathname === '/products' && id === undefined ? 'd-block' : 'd-none'}  `}>
             <input
               ref={queryRef}
               type="text"
@@ -64,9 +67,7 @@ export default function NavbarEl() {
               onChange={handleQuerySearch}
             />
           </div>
-        </div>
-        <div className='nav-links'>
-          <NavLinks />
+
         </div>
       </nav>
     </>
