@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 import NavLinks from './NavLinks';
 import { useDispatch, useSelector } from "react-redux";
 import { updateQuery, updateSearchResults } from "../Rtk/slices/searchQuerySlice";
+import {useParams} from "react-router-dom"
 
 export default function NavbarEl() {
   const [pathname, setPathname] = useState("");
@@ -13,6 +14,7 @@ export default function NavbarEl() {
   const query = useSelector((state) => state.searchQuery.query);
   const queryRef = useRef(null);
   const location = useLocation();
+  const { id } = useParams();
 
   const handleQuerySearch = (e) => {
     dispatch(updateQuery(queryRef.current.value));
@@ -53,7 +55,7 @@ export default function NavbarEl() {
           </Link>
         </div>
         <div className="" >
-          <div className={`searchbar-container ${pathname === "/cart" || pathname === "/" ? "d-none" : ""}`}>
+          <div className={`searchbar-container ${pathname === '/products' && id === undefined ? 'd-block' : 'd-none'}`}>
             <input
               ref={queryRef}
               type="text"
