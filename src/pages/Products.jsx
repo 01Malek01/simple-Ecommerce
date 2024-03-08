@@ -5,7 +5,7 @@ import Card from "../components/Card";
 import {  fetchProducts } from "../Rtk/slices/products-slice";
 import { useDispatch, useSelector } from "react-redux";
 import SideFilterMenu from '../components/FilterMenu';
-
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function Products() {
 
@@ -21,6 +21,19 @@ export default function Products() {
 
   return (
     <>
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition:Slide
+      />
       <div className="container mt-10">
         <div className='row'>
           <div className="col-12 col-lg-3">
