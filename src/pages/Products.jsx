@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { useEffect } from "react";
 import '../components/external styles/products.css';
 import Card from "../components/Card";

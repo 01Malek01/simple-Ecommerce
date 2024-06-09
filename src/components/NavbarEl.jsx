@@ -54,11 +54,11 @@ export default function NavbarEl() {
             />
           </Link>
         </div>
-        <div className=" d-flex justify-content-between align-items-center " >
-          <div className='nav-links'>
+        <div className=" d-flex justify-content-between align-items-center row " >
+          <div className='nav-links col-12  '>
             <NavLinks />
           </div>
-          <div className={`searchbar-container ${pathname === '/products' && id === undefined ? 'd-block' : 'd-none'}  `}>
+          <div className={`searchbar-container col-12  d-flex justify-content-center ${pathname === '/products' && id === undefined ? 'd-block' : 'd-none'}`}>
             <input
               ref={queryRef}
               type="text"
